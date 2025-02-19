@@ -1,0 +1,9 @@
+### Update an existing Todo
+PUT http://localhost:8080/api/v1/todos/100
+Content-Type: application/json
+
+{
+  "title": "Updated Todo",
+  "description": "This todo has been updated",
+  "completed": true
+}
