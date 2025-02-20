@@ -7,3 +7,7 @@ Authorization: Basic YWRtaW46YWRtaW4=
 GET http://localhost:8080/api/v1/todos
 Accept: application/json
 Authorization: Basic dXNlcjE6cGFzc3dvcmQ=
+
+### Get all Todos no auth
+GET http://localhost:8080/api/v1/todos
+Accept: application/json
