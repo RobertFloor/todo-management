@@ -1,8 +1,0 @@
-### Authenticate and get a token
-POST http://localhost:8080/api/v1/authenticate
-Content-Type: application/json
-
-{
-  "username": "user",
-  "password": "0246c67e-f0eb-4712-942c-f7bf733b7666"
-}

@@ -36,8 +36,8 @@ public class TodoServiceImpl implements TodoService {
     public List<TodoDto> getAllTodos() {
         List<Todo> todos = this.todoRepository.findAll();
         return todos.stream()
-                .map(todo -> modelMapper.map(todo, TodoDto.class))
-                .toList();
+            .map(todo -> modelMapper.map(todo, TodoDto.class))
+            .toList();
 
     }
 

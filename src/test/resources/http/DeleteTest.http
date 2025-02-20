@@ -1,3 +1,9 @@
-### Delete a Todo by ID
-DELETE http://localhost:8080/api/v1/todos/10
+### Delete a Todo by ID USER
+DELETE http://localhost:8080/api/v1/todos/14
 Accept: application/json
+Authorization: Basic dXNlcjE6cGFzc3dvcmQ=
+
+### Delete a Todo by ID ADMIN
+DELETE http://localhost:8080/api/v1/todos/14
+Accept: application/json
+Authorization: Basic YWRtaW46YWRtaW4=
