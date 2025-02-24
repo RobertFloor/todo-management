@@ -12,7 +12,7 @@ Authorization: Basic YWRtaW46YWRtaW4=
 ### Update an existing Todo as USER
 PUT http://localhost:8080/api/v1/todos/1
 Content-Type: application/json
-Authorization: Basic dXNlcjE6cGFzc3dvcmQ=
+Authorization: Basic dGVzdDp0ZXN0
 
 {
   "title": "Updated Todo",

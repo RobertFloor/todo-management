@@ -1,0 +1,35 @@
+### Login with correct credentials email
+POST http://localhost:8080/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "usernameOrEmail": "johndoe4@example.com",
+  "password": "password1234"
+}
+
+### Login with correct credentials username
+POST http://localhost:8080/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "usernameOrEmail": "johndoe4",
+  "password": "password1234"
+}
+
+### Login with incorrect credentials username
+POST http://localhost:8080/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "usernameOrEmail": "johndoe4",
+  "password": "password12345"
+}
+
+### Login with incorrect credentials username
+POST http://localhost:8080/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "usernameOrEmail": "johndoe45",
+  "password": "password1234"
+}
