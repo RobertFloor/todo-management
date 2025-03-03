@@ -9,3 +9,9 @@ PATCH http://localhost:8080/api/v1/todos/1/in-complete
 Content-Type: application/json
 Accept: application/json
 Authorization: Basic dXNlcjE6cGFzc3dvcmQ=
+
+### Mark a Todo as Incomplete by ID as ADMIN JWT
+PATCH http://localhost:8080/api/v1/todos/1/in-complete
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc0MDU2NzUxOSwiZXhwIjoxNzQwNjUzOTE5fQ.tcLRZ6DgmmH9fIrL_rsqi7f79dJjWntjng6ZByZ2qkcLCuk8vk7vGIt-etPa113V

@@ -1,6 +1,7 @@
 package net.javaguides.todo.controller;
 
 import lombok.AllArgsConstructor;
+import net.javaguides.todo.dto.JwtAuthResponse;
 import net.javaguides.todo.dto.LoginDto;
 import net.javaguides.todo.dto.RegisterDto;
 import net.javaguides.todo.service.AuthService;
@@ -26,7 +27,9 @@ public class AuthController {
 
     // Build login REST API
     @PostMapping("login")
-    public ResponseEntity<String> login(@RequestBody LoginDto loginDto) {
-        return ResponseEntity.ok(authService.login(loginDto));
+    public ResponseEntity<JwtAuthResponse> login(@RequestBody LoginDto loginDto) {
+        JwtAuthResponse jwtAuthResponse = new JwtAuthResponse();
+        jwtAuthResponse.setAccessToken(authService.login(loginDto));
+        return ResponseEntity.ok(jwtAuthResponse);
     }
 }

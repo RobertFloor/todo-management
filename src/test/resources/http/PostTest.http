@@ -9,6 +9,18 @@ Authorization: Basic YWRtaW46YWRtaW4=
   "completed": false
 }
 
+
+### Add a new Todo ADMIN
+POST http://localhost:8080/api/v1/todos
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc0MDU2NzUxOSwiZXhwIjoxNzQwNjUzOTE5fQ.tcLRZ6DgmmH9fIrL_rsqi7f79dJjWntjng6ZByZ2qkcLCuk8vk7vGIt-etPa113V
+
+{
+  "title": "Complete project",
+  "description": "Finish the Spring Boot JWT API project",
+  "completed": false
+}
+
 ### Add a new Todo USER
 POST http://localhost:8080/api/v1/todos
 Content-Type: application/json
